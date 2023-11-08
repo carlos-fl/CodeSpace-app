@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: agbalumo;
+}
+
+body {
+  background-color: #001524;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100px;
+}
+
+.nav-bar > img {
+  background-color: transparent;
+  height: 100%;
+  margin-left: 70px;
+}
+
+.nav-bar  a {
+  color: #F5F5DC;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  width: 100vw;
+  height: 500px;
+}
+
+.presentation img {
+  height: 100%;
+  width: 80%;
+}
+
+.img-container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 80%;
+  height: 100%;
+}
+
+.img-container-js {
+  position: absolute;
+  top: 0;
+  height: 90%;
+}
+
+
+.img-container-html {
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: 50%;
+}
+
+.img-container-css {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 20%;
+}
+
+.principal-text {
+  color: #D6CC99;
+  font-size: 40px;
+}
+
+.slogan {
+  color: #445D48;
+  font-size: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+}
+
+.presentation span {
+  text-align: center;
+}
+
+.presentation.html-css {
+  margin-top: 100px;
+}
+
+.plans h3 {
+  text-align: center;
+  color: #F5F5DC;
+}
+
+.plans {
+  margin-top: 150px;
+}
+
+.last {
+  margin: 40px 0;
+}
+
+.table {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #D6CC99;
+}
+
+.copyright {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D6CC99;
+}
+
+.social-networks {
+  margin-left: 15px;
+}
+
+.social-networks a {
+  color: #D6CC99;
+  margin-left: 5px;
+}
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #002a48;
+}
