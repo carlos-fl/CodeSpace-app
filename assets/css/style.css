@@ -22,7 +22,7 @@ body {
 
 .nav-bar > img {
   background-color: transparent;
-  height: 100%;
+  height: 140%;
   margin-left: 70px;
 }
 
@@ -147,4 +147,69 @@ body {
   width: 100vw;
   height: 100px;
   background-color: #002a48;
+}
+
+
+/* login html styles */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+}
+
+.main-div > h3 {
+  color: #F5F5DC;
+}
+
+.img-login-container {
+  position: absolute;
+  top: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.img-login-container img {
+  height: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+  position: relative;
+  background-color: #002a48;
+}
+
+.login-form input {
+  width: 80%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.login-form button {
+  border: none;
+  width: 40%;
+  margin-top: 10px;
+  color: #F5F5DC;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #44726c;
 }
