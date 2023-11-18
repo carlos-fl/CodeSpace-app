@@ -201,7 +201,7 @@ body {
   justify-content: center;
   border-radius: 6px;
   width: 100%;
-  height: 80%;
+  height: 100%;
   margin-top: 10px;
   position: relative;
   background-color: #002a48;
@@ -223,4 +223,19 @@ body {
   padding: 12px;
   border-radius: 10px;
   background-color: #44726c;
+}
+
+/* sign up styles */
+
+.seleccionar-plan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+  color: #D6CC99
+}
+
+.login-form h5 {
+  text-align: center;
+  color: #D6CC99;
 }
