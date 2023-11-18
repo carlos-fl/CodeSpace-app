@@ -105,9 +105,10 @@ body {
   margin-top: 100px;
 }
 
-.plans h3 {
+.plans h2 {
   text-align: center;
   color: #F5F5DC;
+  margin-bottom: 10px;
 }
 
 .plans {
@@ -122,6 +123,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 30px;
   color: #D6CC99;
 }
 
@@ -149,6 +151,15 @@ body {
   background-color: #002a48;
 }
 
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
 
 /* login html styles */
 
