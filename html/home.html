@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/6ed790b2ab.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
   <title>Home</title>
 </head>
 <body>
@@ -15,41 +16,24 @@
     </nav>
     <div class="new-project-btn">
       <div>
-        <button>Crear nuevo</button>
+        <button onclick="addProject()">Crear nuevo</button>
       </div>
     </div>
-    <section class="project-directories">
-      <div class="projects">
-        <i class="fa-solid fa-folder"></i>
-        <div class="project-name">
-          <h3>nombre del proyecto</h3>
-        </div>
-      </div>
-      <div class="projects">
-        <i class="fa-solid fa-folder"></i>
-        <div class="project-name">
-          <h3>nombre del proyecto</h3>
-        </div>
-      </div>
-      <div class="projects">
-        <i class="fa-solid fa-folder"></i>
-        <div class="project-name">
-          <h3>nombre del proyecto</h3>
-        </div>
-      </div>
-      <div class="projects">
-        <i class="fa-solid fa-folder"></i>
-        <div class="project-name">
-          <h3>nombre del proyecto</h3>
-        </div>
-      </div>
-      <div class="projects">
-        <i class="fa-solid fa-folder"></i>
-        <div class="project-name">
-          <h3>nombre del proyecto un poco mas largo</h3>
-        </div>
+    <!-- seccion para renderizar los proyectos -->
+    <section class="project-directories" id="projects"></section>
+    <section id="form-project" class="off">
+      <div class="form-container">
+        <input type="text" minlength="3" placeholder="Nombre del proyecto" id="project-name">
+        <select id="project-type">
+          <option value="web">Web</option>
+          <option value="python">python</option>
+          <option value="java">java</option>
+          <option value="c++">c++</option>
+        </select>
+        <button type="button" onclick="createProject()">Crear</button>
       </div>
     </section>
   </main>
+  <script src="../assets/js/controller.home.js"></script>
 </body>
 </html>
