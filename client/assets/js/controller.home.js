@@ -51,7 +51,7 @@ function clearFormValues() {
 function redirectToEditor(index) {
   const projectSelected = projectList[index]
   if(projectSelected.projectType == 'web') 
-    window.location.href = 'http://localhost:5500/html/webEditor.html'
+    window.location.href = 'http://localhost:5500/client/html/webEditor.html'
   else 
-    window.location.href = 'http://localhost:5500/html/generalEditor.html'
+    window.location.href = 'http://localhost:5500/client/html/generalEditor.html'
 }
