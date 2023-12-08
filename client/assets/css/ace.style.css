@@ -36,9 +36,27 @@ body {
 .programming.window {
   background-color: #282a36;
   height: 90vh;
+  width: 95vw;
 }
 
 .window {
   background-color: #282a36;
   height: 90vh;
+}
+
+/* save button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.save-btn {
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 150px;
+  padding: 8px 15px;
+  background-color: #282a36;
+  color: #F5F5DC;
 }

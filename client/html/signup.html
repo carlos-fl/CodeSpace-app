@@ -9,7 +9,7 @@
 </head>
 <body>
   <main class="main">
-    <div class="main-div">
+    <div class="main-div" id="signup-container">
       <h3>Crear cuenta</h3>
       <form class="login-form">
         <div class="img-login-container">
@@ -20,16 +20,16 @@
         <h5>Elige tu plan</h5>
         <div class="seleccionar-plan">
           <div>
-            <label>BÁSICO</label><input type="radio" name="plan-seleccionado" required>
+            <label>BÁSICO</label><input type="radio" name="plan-seleccionado" value="Basico">
           </div>
           <div>
-            <label>PRO</label><input type="radio" name="plan-seleccionado" required>
+            <label>PRO</label><input type="radio" name="plan-seleccionado" value="Pro">
           </div>
           <div>
-            <label>PREMIUM</label><input type="radio" name="plan-seleccionado" required>
+            <label>PREMIUM</label><input type="radio" name="plan-seleccionado" value="Premium">
           </div>
         </div>
-        <button type="submit" onclick="redirectToHome()">Crear cuenta</button>
+        <button type="button" onclick="redirectToHome()" id="SignUpBtn">Crear cuenta</button>
       </form>
     </div>
   </main>

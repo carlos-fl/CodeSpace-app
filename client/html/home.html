@@ -4,15 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/6ed790b2ab.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
   <title>Home</title>
 </head>
 <body>
+  <!-- modal para actualizar plan -->
+  <div class="modal fade" id="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cambiar Plan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <select  class="form-select" id="select">
+            <option value="Basico">Basico</option>
+            <option value="Pro" selected>Pro</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="changePlan()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
+   <!-- modal para compartir proyecto -->
+   <div class="modal fade" id="shareModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Compartir Proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="user-container" id="user-container">
+          <!-- users -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="changePlan()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
   <main class="home-main">
-    <nav class="home-nav">
-      <input type="text" placeholder="Buscar proyecto">
-      <i class="fa-regular fa-user"></i>
+    <nav class="home-nav" id="nav">
+      <!-- nombre del usuario -->
+      <div>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal">Cambiar plan</button>
+        <button type="button" class="btn btn-secondary" onclick="logout()">Log out</button>
+      </div>
     </nav>
     <div class="new-project-btn">
       <div>
@@ -34,6 +82,8 @@
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   <script src="../assets/js/controller.home.js"></script>
 </body>
 </html>

@@ -295,6 +295,19 @@ body {
   align-items: flex-start;
 }
 
+.dropdown-menu > div {
+  cursor: pointer;
+}
+
+.title {
+  color: #D6CC99;
+}
+
+.dropdown-menu {
+  background-color: #D6CC99;
+  color: #445D48;
+}
+
 .project-directories i {
   color: #445D48;
   font-size: 100px;
@@ -370,4 +383,27 @@ body {
 
 .off {
   display: none;
+}
+
+.modal-content {
+  background-color: #001524;
+}
+
+.modal-title {
+  color: #D6CC99;
+}
+
+.btn-close {
+  color: #D6CC99;
+}
+
+.user-box:active {
+  border: 2px solid #445D48;
+}
+
+.user-container {
+  width: 100%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
 }
