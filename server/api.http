@@ -1,0 +1,92 @@
+### create new user
+POST http://localhost:3000/usuarios/usuario
+Content-Type: application/json
+
+{
+  "name": "thomas",
+  "password": "estaesotracontra",
+  "plan": "Basico",
+  "projects": []
+}
+
+### get active user
+GET http://localhost:3000/usuarios/activo
+
+### get all users
+GET http://localhost:3000/usuarios
+
+### get a user
+GET http://localhost:3000/usuarios/cuenta/65737227cb1f8c0a272960a0
+
+### update plan for a user
+PUT http://localhost:3000/usuarios/usuario/65717b5acfb0f37c545a6ee8
+Content-Type: application/json
+
+{
+  "plan": "pro"
+}
+
+### update projects
+PUT http://localhost:3000/usuarios/usuario/65729f690102f6e403bfb731/proyecto
+Content-Type: application/json
+
+{
+  "newProject": "65733f42165af203f082c52a"
+}
+
+### login of user
+POST http://localhost:3000/usuarios/usuario/login
+Content-Type: application/json
+
+{
+  "name": "nuevo",
+  "password": "estaesotracontra" 
+}
+
+### create new project
+POST http://localhost:3000/proyectos/usuario/6572606894b26dd4b155fd46
+Content-Type: application/json
+
+{
+  "projectName": "aprendiendo desarrollo web",
+  "type": "web",
+  "active": false,
+  "code": {
+    "html": "<h3>hola mundo</h3>",
+    "css": "h1 { color: yellow }",
+    "js": "console.log('hola fun')"
+  }
+}
+
+### update code of project
+PUT http://localhost:3000/proyectos/proyecto/6572ba1163736a33f7efea88
+Content-Type: application/json
+
+{
+  "html": "<h5>parrafo mas pequeño</h5>",
+  "css": "h5 { color: red }",
+  "js": "const sum = a + b"
+}
+
+### log out user
+
+PUT http://localhost:3000/usuarios/usuario/6572927894b26dd4b155fd53/logout
+Content-Type: application/json
+
+
+### get all projects
+GET http://localhost:3000/proyectos/6572927894b26dd4b155fd53
+
+### get a project
+
+GET http://localhost:3000/proyectos/seleccionado/6572606894b26dd4b155fd46
+
+### active a project
+PUT http://localhost:3000/proyectos/proyecto/seleccionado/6572be891a8c438424aaf747
+Content-Type: application/json
+
+### get active project
+GET http://localhost:3000/proyectos/proyecto/activo
+
+### delete a project
+DELETE http://localhost:3000/proyectos/proyecto/657376dde1be7a6736514c68/65737f954cc707a98460b8f4
